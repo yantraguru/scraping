@@ -17,7 +17,7 @@ class QuotesSpider(scrapy.Spider):
     }
 
     def start_requests(self):
-        with open('C:\\Users\\Adwait\\ag\\index-links.txt') as f:
+        with open('index-links.txt') as f:
             urls = f.read().splitlines() 
 
         for url in urls:
